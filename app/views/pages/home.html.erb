@@ -2,6 +2,7 @@
 	<h1>Welcome to my app!</h1>
 	<% if user_signed_in? %>
 		<h1>.|.</h1>
+		<img src="/Pietro.jpg" alt="rss feed" />
 	<% else %>
 	<p>Click here to <%= link_to "Sign up", new_user_registration_path, class: "btn btn-info btn-sm" %> or <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-sm" %></p>
 	<% end %>
