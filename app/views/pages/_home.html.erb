@@ -1,8 +1,4 @@
 <div class="jumbotron center">
-	<% if user_signed_in? %>
-		<%=image_tag "/Pietro.jpg", alt: "Pietro", class: "img-circle"%>
-	<% else %>
 	<h1>Welcome to my app!</h1>
 	<p>Click here to <%= link_to "Sign up", new_user_registration_path, class: "btn btn-info btn-sm" %> or <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-sm" %></p>
-	<% end %>
 </div>
